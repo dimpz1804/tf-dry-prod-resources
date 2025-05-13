@@ -3,6 +3,6 @@ resource "null_resource" "example" {
     command = "echo This command will execute only when the configuration changes"
   }
  triggers = {
-  always_run = “${timestamp()}”
+  always_run = "${timestamp()}"
  }
 }
