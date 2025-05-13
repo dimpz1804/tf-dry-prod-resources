@@ -20,5 +20,6 @@ resource "time_sleep" "wait_300_seconds" {
 }
 
 resource "null_resource" "next" {
+
   depends_on = [time_sleep.wait_300_seconds]
 }
