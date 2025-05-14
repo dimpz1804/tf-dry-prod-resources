@@ -5,6 +5,5 @@ resource "null_resource" "example-main" {
   }
   provisioner "local-exec" {
     command = "echo This specific command will execute every time during apply for the dev environment"
-
   }
 }
