@@ -4,6 +4,6 @@ resource "null_resource" "example-main" {
     always_run = timestamp()
   }
   provisioner "local-exec" {
-    command = "echo This specific command will execute every time during apply as triggers are used"
+    command = "echo This specific command will execute every time during apply as triggers are used for the prod env"
   }
 }
