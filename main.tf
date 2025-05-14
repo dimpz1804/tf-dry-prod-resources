@@ -1,11 +1,11 @@
 resource "null_resource" "previous" {}
 
-resource "time_sleep" "wait_20_seconds" {
+resource "time_sleep" "wait_10_seconds" {
   depends_on = [null_resource.previous]
-  create_duration = "20s"
+  create_duration = "10s"
 }
 
 resource "null_resource" "next" {
-depends_on = [time_sleep.wait_20_seconds]
+depends_on = [time_sleep.wait_10_seconds]
 }
 
